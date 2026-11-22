@@ -1,0 +1,21 @@
+[2026-11-22T10:33:31Z] === ENRICH ITERATION 1 START | repo=near/near-jsonrpc-client-rs sha=1ade639e ===
+[2026-11-22T10:33:31Z] [iter=1] PHASE START: enrich repo=near/near-jsonrpc-client-rs sha=1ade639e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1ade639e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz
+[2026-11-22T10:33:44Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T10:33:45Z] [iter=1] AST store loaded triples=142923 load_secs=1 mem_mb=285 MB
+[2026-11-22T10:33:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=285 MB
+[2026-11-22T10:33:45Z] [iter=1] LSP targets found call_sites=719 imports=82 extends=0 implements=22 secs=0
+[2026-11-22T10:33:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=285 MB
+[2026-11-22T10:33:46Z] [iter=1] Position index built positions=10229 nodes_with_types=12123 secs=0 mem_mb=285 MB
+[2026-11-22T10:33:46Z] [iter=1] Step 3: Starting LSP resolution mem_mb=285 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T10:33:46Z] [iter=1] Resolving target type target_type=call_site count=719
+[2026-11-22T10:34:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=examples/contract_change_method.rs
+[2026-11-22T10:34:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=2 resolved=110 errors=0 current=examples/utils.rs
+[2026-11-22T10:34:48Z] [iter=1] Target type resolved target_type=call_site resolved=572 errors=0 secs=62 mem_mb=285 MB
+[2026-11-22T10:34:48Z] [iter=1] Resolving target type target_type=import_statement count=82
+[2026-11-22T10:35:10Z] [iter=1] Target type resolved target_type=import_statement resolved=70 errors=0 secs=21 mem_mb=285 MB
+[2026-11-22T10:35:10Z] [iter=1] Resolving target type target_type=implements_clause count=22
+[2026-11-22T10:35:12Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=src/methods/any/mod.rs
+[2026-11-22T10:35:28Z] [iter=1] Target type resolved target_type=implements_clause resolved=19 errors=0 secs=19 mem_mb=285 MB
+[2026-11-22T10:35:53Z] [iter=1] Step 5: Writing final enrichment file triples=9202
+[2026-11-22T10:35:53Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz size_kb=180
+[2026-11-22T10:35:53Z] [iter=1] PHASE END: enrich elapsed_s=142 elapsed_min=2.4 total_triples=9202

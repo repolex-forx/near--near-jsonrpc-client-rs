@@ -73,6 +73,170 @@
       ],
       "ast": [
         "aggregate/ast/1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "log",
+          "ecosystem": "CARGO",
+          "version": "0.4.17",
+          "githubOrg": "rust-lang",
+          "githubRepo": "log",
+          "githubCommit": "7fb28c36c7a418912612ab37ab49bd4ca1a3a7f5",
+          "githubTag": "0.4.17",
+          "githubUrl": "https://github.com/rust-lang/log",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "borsh",
+          "ecosystem": "CARGO",
+          "version": "1.3.0",
+          "githubOrg": "near",
+          "githubRepo": "borsh-rs",
+          "githubUrl": "https://github.com/near/borsh-rs",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "serde",
+          "ecosystem": "CARGO",
+          "version": "1.0.145",
+          "githubOrg": "serde-rs",
+          "githubRepo": "serde",
+          "githubCommit": "8c036ee5a313b849c52eaaef6421c3b68dd1a350",
+          "githubTag": "v1.0.145",
+          "githubUrl": "https://github.com/serde-rs/serde",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "reqwest",
+          "ecosystem": "CARGO",
+          "version": "0.12",
+          "githubOrg": "seanmonstar",
+          "githubRepo": "reqwest",
+          "githubUrl": "https://github.com/seanmonstar/reqwest",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "thiserror",
+          "ecosystem": "CARGO",
+          "version": "2.0",
+          "githubOrg": "dtolnay",
+          "githubRepo": "thiserror",
+          "githubUrl": "https://github.com/dtolnay/thiserror",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "serde_json",
+          "ecosystem": "CARGO",
+          "version": "1.0.85",
+          "githubOrg": "serde-rs",
+          "githubRepo": "json",
+          "githubCommit": "44d9c53e2507636c0c2afee0c9c132095dddb7df",
+          "githubTag": "v1.0.85",
+          "githubUrl": "https://github.com/serde-rs/json",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "lazy_static",
+          "ecosystem": "CARGO",
+          "version": "1.4.0",
+          "githubOrg": "rust-lang-nursery",
+          "githubRepo": "lazy-static.rs",
+          "githubCommit": "421669662b35fcb455f2902daed2e20bbbba79b6",
+          "githubTag": "1.4.0",
+          "githubUrl": "https://github.com/rust-lang-nursery/lazy-static.rs",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "near-crypto",
+          "ecosystem": "CARGO",
+          "version": "0.35",
+          "githubOrg": "near",
+          "githubRepo": "nearcore",
+          "githubUrl": "https://github.com/near/nearcore",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "near-primitives",
+          "ecosystem": "CARGO",
+          "version": "0.35",
+          "githubOrg": "near",
+          "githubRepo": "nearcore",
+          "githubUrl": "https://github.com/near/nearcore",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "near-chain-configs",
+          "ecosystem": "CARGO",
+          "version": "0.35",
+          "githubOrg": "near",
+          "githubRepo": "nearcore",
+          "githubUrl": "https://github.com/near/nearcore",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "near-jsonrpc-primitives",
+          "ecosystem": "CARGO",
+          "version": "0.35",
+          "githubOrg": "near",
+          "githubRepo": "nearcore",
+          "githubUrl": "https://github.com/near/nearcore",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "tokio",
+          "ecosystem": "CARGO",
+          "version": "1.0",
+          "githubOrg": "tokio-rs",
+          "githubRepo": "tokio",
+          "githubUrl": "https://github.com/tokio-rs/tokio",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "env_logger",
+          "ecosystem": "CARGO",
+          "version": "0.11.0",
+          "githubOrg": "rust-cli",
+          "githubRepo": "env_logger",
+          "githubCommit": "8f4361ba4439acb69068be0e181d2d1300b7218d",
+          "githubTag": "v0.11.0",
+          "githubUrl": "https://github.com/rust-cli/env_logger",
+          "source": "build_file:Cargo.toml"
+        },
+        {
+          "packageName": "http",
+          "ecosystem": "CARGO",
+          "version": "1.5.0",
+          "githubOrg": "hyperium",
+          "githubRepo": "http",
+          "githubCommit": "16fc9a7b840c2181e7f8b37397c107b0ffcd050d",
+          "githubTag": "v1.5.0",
+          "githubUrl": "https://github.com/hyperium/http",
+          "source": "lsp",
+          "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-1.5.0/src/header/value.rs"
+        },
+        {
+          "packageName": "near-account-id",
+          "ecosystem": "CARGO",
+          "version": "2.6.0",
+          "githubOrg": "near",
+          "githubRepo": "near-account-id",
+          "githubCommit": "3414fb1ac23322f78e73ba3200007648365e329e",
+          "githubTag": "v2.6.0",
+          "githubUrl": "https://github.com/near/near-account-id",
+          "source": "lsp",
+          "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/near-account-id-2.6.0/src/account_id.rs"
+        },
+        {
+          "packageName": "near-primitives-core",
+          "ecosystem": "CARGO",
+          "version": "0.35.1",
+          "githubOrg": "near",
+          "githubRepo": "nearcore",
+          "githubUrl": "https://github.com/near/nearcore",
+          "source": "lsp",
+          "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/near-primitives-core-0.35.1/src/serialize.rs"
+        }
       ]
     }
   ],
