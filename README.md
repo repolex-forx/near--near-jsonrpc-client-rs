@@ -1,1 +1,144 @@
-Initializing
+# Repolex Knowledge Graph of near/near-jsonrpc-client-rs
+
+RDF knowledge graph data for [near/near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download near/near-jsonrpc-client-rs
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1
+│   │       └── chunk-001.nq.gz
+│   ├── lsp
+│   │   └── 1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz
+│   └── repolex
+│       └── 1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0015e7b7fa71deac16e0cb5f388a65cf70899319.nq.gz
+│   ├── 01c85b594f0a9989755cbc156b357ae6f40d8155.nq.gz
+│   ├── 062e429609ad91d4b6fd6fb70cba227f3c74d989.nq.gz
+│   ├── 087d25415312b1772628812975fe004b6ca4e3dd.nq.gz
+│   ├── 0c4418b1ba1bdf07c420994856d2d9c3be3047d3.nq.gz
+│   ├── 0e52542130a761bf130022f620b2e8fe20a981c5.nq.gz
+│   ├── 1427e4ff0244c423f3be5bb0d49de0bf3edf0e32.nq.gz
+│   ├── 1526099c9fd7d46174fec9359134f7534cde0c58.nq.gz
+│   ├── 1cdeeed4994ad0f920c35d3178879542a82ba68e.nq.gz
+│   ├── 216021664648882cd582a699d7407be16bffed74.nq.gz
+│   ├── 299c6b17b5c52baba87a9fe083f709221c7e0cd4.nq.gz
+│   ├── 2aed1dca75c657f8dc023b5b64f129c4b7380171.nq.gz
+│   ├── 3277c08c3aa6e9abd75f7cbeee1f62775b954c43.nq.gz
+│   ├── 33f9947c5e72f6591f6284d2ce14b26d66191b48.nq.gz
+│   ├── 35b8c28d685a4237fd3f27d161ef2bac1113998f.nq.gz
+│   ├── 37d8c9bf62ca384e12b1da9cac0f72279f6b8401.nq.gz
+│   ├── 3cddce78fb88532fe0473ef38fd9bfe41211ceb3.nq.gz
+│   ├── 3dc5c21b2fcaf9b45b742b6dd1d6935bdfac7fbc.nq.gz
+│   ├── 483b0c28e2785ebce104d2d1907d2315feb46ddb.nq.gz
+│   ├── 48edfe20ff646f530f84dcee8194af942e9a8c7d.nq.gz
+│   ├── 598495b917c5d59948f68391a25c32782ad87a36.nq.gz
+│   ├── 5a5f5c0687bdb908ab4f2ecf3c810a8120473efa.nq.gz
+│   ├── 603d01da3f1d829825069616e05e548e9a07c1f6.nq.gz
+│   ├── 65565bb12f17e9fb3c80514d86e62382e9ef2597.nq.gz
+│   ├── 6864713945ba5cdc71c2dda6cba1f67af0a724d1.nq.gz
+│   ├── 69b6a1821724cb5e91ac60337403e5ab77fc8611.nq.gz
+│   ├── 6b8b45aa2f10c51bfb6241bf9b7c194d0802f3d8.nq.gz
+│   ├── 6f13e3c51a3ff99e5105344b30119168b15601f1.nq.gz
+│   ├── 6f6f07631c496c677a102b6ee96ec68104493217.nq.gz
+│   ├── 749aa1ecd9bd558a60d45bfdd304f7d2c86e0ae9.nq.gz
+│   ├── 74a901f8718a86931ee6609d9d2b0c1fc74e07be.nq.gz
+│   ├── 8a07c78c94c12150706571aae5aaa3d21d364391.nq.gz
+│   ├── 8aaf86de6080ee0c11600559a1c5c4d2e12458cc.nq.gz
+│   ├── 8fe2cc1450d92471970f375fe492021664b0fbfe.nq.gz
+│   ├── 97d1548b5bb9c2d177f6b20999bc14c7aaa50edb.nq.gz
+│   ├── 9832fb41e19d9196dd4f3b0eb9650f9ca0978876.nq.gz
+│   ├── 990b45aca327d860ff67c93620fad205916eebe7.nq.gz
+│   ├── a3f53ea34028758b2c534b9fb79706cdb04c1e8f.nq.gz
+│   ├── a8e6bb688d2b392143ee6f970bd95f6f033eb43d.nq.gz
+│   ├── b4a1a64a420bb8da1aee1473ebb4b3f6635ec7ab.nq.gz
+│   ├── b53fde36b30a4aeac8c7599704c5ba73f5e0d1ab.nq.gz
+│   ├── b85acba5924cd5cec254d7e4fcb10bfd4a989bb2.nq.gz
+│   ├── bca74f57b7175ed8c58a05f5dc5b18a7b2aeb23a.nq.gz
+│   ├── be16fb1e1a61efd8f42a235d3f42997a182d0cc9.nq.gz
+│   ├── c76093f5e9c99e0b29825b48f8ea7269a7c742e9.nq.gz
+│   ├── ca020636738728c06c5c96519fbcadbe97db43db.nq.gz
+│   ├── cc4af6acb8e8bc654208a335ae4b67c16ccc2e6b.nq.gz
+│   ├── cc6bde8345c6cbcd1d1aad05b8459f3fce7acf7e.nq.gz
+│   ├── cd8ef21e311888fa3d5cf80fd76fe491bd13289a.nq.gz
+│   ├── d104723a62af0963c03bd4ff629a6363f29bde3d.nq.gz
+│   ├── d434a3ceeedf190d7697c3ebfa391610a04233b7.nq.gz
+│   ├── da7b80a5fcf0d8669be3665429ad31848ed14230.nq.gz
+│   ├── e5c329d5d33479977c9773103fb4f15bf7fed6be.nq.gz
+│   ├── ebc4206e2c95d81da641bcee63f44df5c2c848f9.nq.gz
+│   ├── eea198f73df359856382f283bf354b6f7233cf83.nq.gz
+│   ├── eea93d1565e07ac5ccb8f63867abb70c43c4a69a.nq.gz
+│   ├── f00fdd7ef70a68eebfcfddc835b1529841d9fe78.nq.gz
+│   ├── f0325f7f94a5217a1dc82a66f2edb59f8ff0b8e6.nq.gz
+│   ├── f4f30c89ccec1eae4b6ae6310ebc4acb50760611.nq.gz
+│   ├── f9fc8f92680207ea9534987b4c58c8fb7eac7b29.nq.gz
+│   └── fa33fd91ae9c7607cfe1679a000e3089f44ba215.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── dep
+│   └── 1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz
+├── filetree
+│   └── 1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+15 directories, 71 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[near/near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs)
+
+---
+*Parsed on 2026-11-22 by [repolex](https://repolex.ai)*

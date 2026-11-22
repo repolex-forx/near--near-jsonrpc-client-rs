@@ -1,0 +1,11 @@
+{
+  "org": "near",
+  "repo": "near-jsonrpc-client-rs",
+  "versions": [
+    {
+      "commit": "1ade639ef681aa241f79a3d1882b8a1c6ae6a9a1",
+      "tag": "v0.21.0",
+      "parsed_at": "2026-11-22T10:38:00.595504+00:00"
+    }
+  ]
+}
